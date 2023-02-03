@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "outDir": "src-js-demo"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
