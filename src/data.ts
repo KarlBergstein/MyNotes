@@ -1,71 +1,69 @@
-let user1: User = {
+const user1: User = {
     id: 0,
-    name: "Thomas",
-    surname: "Edison",
+    name: 'Thomas',
+    surname: 'Edison',
     dateOfBirth: new Date(35),
-    sex: "man",
-    login: "Tom",
-    password: "12345",
+    sex: 'man',
+    login: 'Tom',
+    password: '12345',
     siteId: 0,
-    notes: [],
+    notes: []
 }
 
-let user2: User = {
+const user2: User = {
     id: 1,
-    name: "Jack",
-    surname: "London",
+    name: 'Jack',
+    surname: 'London',
     dateOfBirth: new Date(29),
-    sex: "man",
-    login: "Jack",
+    sex: 'man',
+    login: 'Jack',
     siteId: 0,
-    password: "23456",
-    notes: [],
+    password: '23456',
+    notes: []
 }
 
-let user3: User = {
+const user3: User = {
     id: 2,
-    name: "Agathe",
-    surname: "Christy",
+    name: 'Agathe',
+    surname: 'Christy',
     dateOfBirth: new Date(42),
-    sex: "woman",
-    login: "FullMetalBitch",
+    sex: 'woman',
+    login: 'FullMetalBitch',
     siteId: 0,
-    password: "777777",
-    notes: [],
+    password: '777777',
+    notes: []
 }
 
-
-let site: Site = {
+const site: Site = {
     id: 0,
-    title: "Title",
-    address: "http//asdasda",
+    title: 'Title',
+    address: 'http//asdasda',
     users: [user1, user2, user3]
 }
 
-
-let note1: Note = {
+const note1: Note = {
     id: 0,
-    header: "Header1",
-    text: "Text1",
+    header: 'Header1',
+    text: 'Text1',
     userId: 0,
-    createdTime: new Date("05.09.1985 15:33"),
-    color: "orange",
+    createdTime: new Date('05.09.1985 15:33'),
+    color: 'orange'
 }
 
-let note2: Note = {
+const note2: Note = {
     id: 1,
-    header: "Header2",
-    text: "Text2",
+    header: 'Header2',
+    text: 'Text2',
     userId: 1,
-    createdTime: new Date("05.09.1985 15:33"),
-    color: "blue",
+    createdTime: new Date('05.09.1985 15:33'),
+    color: 'blue'
 }
 
-let note3: Note = {
+const note3: Note = {
     id: 2,
-    header: "Header3",
-    text: "Text3",
+    header: 'Header3',
+    text: 'Text3',
     userId: 2,
-    createdTime: new Date("05.09.1985 15:33"),
-    color: "red",
+    createdTime: new Date('05.09.1985 15:33'),
+    color: 'red'
 }
