@@ -1,6 +1,7 @@
 {
   "scripts": {
     "dev": "vite",
+    "build": "tsc && vite build",
     "build:ts": "npx tsc --build .\\tsconfig_demo.json",
     "init": "rd /s /q node_modules & yarn install",
     "test": "jest",
