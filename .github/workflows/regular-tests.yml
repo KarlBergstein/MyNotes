@@ -2,7 +2,7 @@ name: "Test all tasks"
 on: push
 
 jobs:
-  test:
+  test-lint-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,3 +21,6 @@ jobs:
 
       - name: Run linter
         run: yarn run lint
+
+      - name: Deploy
+        run: yarn run predeploy && yarn run deploy
