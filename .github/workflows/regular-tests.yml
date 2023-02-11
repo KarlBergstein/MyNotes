@@ -22,6 +22,9 @@ jobs:
       - name: Run linter 🏴󠁧󠁢󠁮󠁩󠁲󠁿
         run: yarn run lint
 
+      - name: Pre-Deploy 🍳
+        run: yarn run predeploy
+
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
