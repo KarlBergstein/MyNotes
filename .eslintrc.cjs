@@ -1,4 +1,5 @@
 module.exports = {
+    ignorePatterns: ['./src-js-demo/*.js'],
     env: {
         browser: true,
         commonjs: true,
