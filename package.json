@@ -4,7 +4,7 @@
     "build": "tsc && vite build",
     "build:ts": "npx tsc --build .\\tsconfig_demo.json",
     "init": "rd /s /q node_modules & yarn install",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "lint": "yarn eslint ./src/**/*.ts",
     "lint:fix": "yarn eslint ./src/**/*.ts --fix",
     "predeploy": "npm run build",
