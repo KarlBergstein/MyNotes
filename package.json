@@ -2,12 +2,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:gh-pages": "tsc && vite build --base=/MyNotes/",
     "build:ts": "npx tsc --build .\\tsconfig_demo.json",
     "init": "rd /s /q node_modules & yarn install",
     "test": "jest --passWithNoTests",
     "lint": "yarn eslint ./src/**/*.ts",
     "lint:fix": "yarn eslint ./src/**/*.ts --fix",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build:gh-pages",
     "deploy": "gh-pages -d dist"
   },
   "version": "1.0.0",
