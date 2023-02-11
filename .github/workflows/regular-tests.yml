@@ -5,22 +5,24 @@ jobs:
   test-lint-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Setup node
+      - name: Setup node 🛠️
         uses: actions/setup-node@v3
         with:
           node-version: 16.13.x
 
-      - name: Yarn install
+      - name: Yarn install ⚒️
         run: yarn install
 
-      - name: Run tests
+      - name: Run tests 🧪
         run: yarn run test
 
-      - name: Run linter
+      - name: Run linter 🏴󠁧󠁢󠁮󠁩󠁲󠁿
         run: yarn run lint
 
-      - name: Deploy
-        run: yarn run predeploy && yarn run deploy
+      - name: Deploy to GitHub Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          folder: dist
