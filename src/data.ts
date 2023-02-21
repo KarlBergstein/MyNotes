@@ -24,7 +24,7 @@ const user2: User = {
 
 const user3: User = {
     id: 2,
-    name: 'Agathe',
+    name: 'Max',
     surname: 'Christy',
     dateOfBirth: new Date(42),
     sex: 'woman',
@@ -34,10 +34,9 @@ const user3: User = {
     notes: []
 }
 
-const site: Site = {
+export const site: Site = {
     id: 0,
     title: 'Title',
-    address: 'http//asdasda',
     users: [user1, user2, user3]
 }
 

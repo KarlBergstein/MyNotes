@@ -14,7 +14,6 @@ interface User {
 interface Site {
     id: number
     title: string
-    address: string
 
     users: User[]
 }
