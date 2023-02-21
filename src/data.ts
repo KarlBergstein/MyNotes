@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 const user1: User = {
     id: 0,
     name: 'Thomas',
@@ -35,7 +34,7 @@ const user3: User = {
     notes: []
 }
 
-const note1: Note = {
+/* const note1: Note = {
     id: 0,
     header: 'Header1',
     text: 'Text1',
@@ -60,7 +59,7 @@ const note3: Note = {
     userId: 2,
     createdTime: new Date('05.09.1985 15:33'),
     color: 'red'
-}
+} */
 
 export const site: Site = {
     id: 0,
