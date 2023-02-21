@@ -16,4 +16,4 @@ for (const user of site.users) {
 
 userList[0].innerHTML = inner
 
-// Выводим заметки
+// Выводим погоду
