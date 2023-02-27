@@ -25,7 +25,7 @@ textWidget[0].innerHTML = site.weather.temperature.toString() + site.weather.uni
 
 // Функция поиска всех заметок на сайте
 function getAllNotes(site: Site): Note[] {
-    let allNotes: Note[] = []
+    const allNotes: Note[] = []
 
     // you' code is here
     // allNotes = site.users.flatMap(user => user.notes.map(note => note))
