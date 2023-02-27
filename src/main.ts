@@ -23,7 +23,15 @@ headerWidget[0].innerHTML = 'Погода в' + site.weather.city
 const textWidget = document.querySelectorAll('#textWidget')
 textWidget[0].innerHTML = site.weather.temperature.toString() + site.weather.units
 
-/* // Выводим заметки
-const note1 = document.getElementById('#note1')
-let meaning = ''
-meaning = site.users.notes */
+// Функция поиска всех заметок на сайте
+function getAllNotes(site: Site): Note[] {
+    const allNotes: Note[] = []
+
+    // you' code is here
+
+    return allNotes
+}
+
+const allNotes = getAllNotes(site)
+
+console.warn(allNotes)
