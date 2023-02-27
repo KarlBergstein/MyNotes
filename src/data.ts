@@ -61,8 +61,17 @@ const note3: Note = {
     color: 'red'
 } */
 
+const weather: Weather = {
+    id: 0,
+    city: 'Сирии',
+    temperature: 56,
+    units: '°C',
+    color: 'black'
+}
+
 export const site: Site = {
     id: 0,
     title: 'Title',
-    users: [user1, user2, user3]
+    users: [user1, user2, user3],
+    weather: weather
 }

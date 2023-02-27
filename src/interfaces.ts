@@ -16,6 +16,7 @@ interface Site {
     title: string
 
     users: User[]
+    weather: Weather
 }
 
 interface Note {
@@ -24,5 +25,13 @@ interface Note {
     text: string
     userId: number
     createdTime: Date
+    color: string
+}
+
+interface Weather {
+    id: number
+    city: string
+    temperature: number
+    units: string
     color: string
 }

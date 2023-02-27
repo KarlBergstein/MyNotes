@@ -137,33 +137,33 @@ background: #BCBCBC;
   }
 
 
-.vidget {
+.widget {
 color: #000000;
 }
 
-.designation_vidget {
+.designation_widget {
 text-align: center;
 font-weight: 100;
 font-size: 17px;
 padding-top: 10px;
 }
 
-.vidget_weather {
+.widget_weather {
 text-align: center;
 font-weight: 500;
 font-size: 80px;
 padding-top: 20px;
 }
 
-.vidget_users {
+.widget_users {
 font-weight: 100;
 font-size: 17px;
 }
 
-.vidget_users li {
+.widget_users li {
 list-style-type: none;
 }
 
-.vidget_users ul {
+.widget_users ul {
 padding-left: 0;
 }
