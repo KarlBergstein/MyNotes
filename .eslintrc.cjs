@@ -16,6 +16,7 @@ module.exports = {
         indent: ['warn', 4],
         '@typescript-eslint/indent': ['warn', 4],
         '@typescript-eslint/no-unused-vars': ['warn'],
-        '@typescript-eslint/no-non-null-assertion': ['warn']
+        '@typescript-eslint/no-non-null-assertion': ['warn'],
+        '@typescript-eslint/space-before-function-paren': ['off']
     }
 }

@@ -1,4 +1,5 @@
 import { site } from './data'
+import { getAllNotes } from './functions'
 
 // Меняем заголовок сайта
 const title = document.querySelectorAll('title')
@@ -23,16 +24,7 @@ headerWidget[0].innerHTML = 'Погода в' + site.weather.city
 const textWidget = document.querySelectorAll('#textWidget')
 textWidget[0].innerHTML = site.weather.temperature.toString() + site.weather.units
 
-// Функция поиска всех заметок на сайте
-function getAllNotes(site: Site): Note[] {
-    const allNotes: Note[] = []
-
-    // you' code is here
-    // allNotes = site.users.flatMap(user => user.notes.map(note => note))
-
-    return allNotes
-}
-
+// Поиск всех заметок
 const allNotes = getAllNotes(site)
 
 console.warn(allNotes)

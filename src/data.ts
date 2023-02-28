@@ -1,5 +1,5 @@
 
-const note1: Note = {
+export const note1: Note = {
     id: 0,
     header: 'Header1',
     text: 'Text1',
@@ -8,7 +8,7 @@ const note1: Note = {
     color: 'orange'
 }
 
-const note2: Note = {
+export const note2: Note = {
     id: 1,
     header: 'Header2',
     text: 'Text2',
@@ -17,7 +17,7 @@ const note2: Note = {
     color: 'blue'
 }
 
-const note3: Note = {
+export const note3: Note = {
     id: 2,
     header: 'Header3',
     text: 'Text3',
