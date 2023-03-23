@@ -1,5 +1,5 @@
 import { site } from './data'
-import { getAllNotes } from './functions'
+import { getAllNotes, resolveUserById } from './functions'
 
 // Меняем заголовок сайта
 const title = document.querySelectorAll('title')
@@ -11,7 +11,7 @@ let inner = ''
 let index = 1
 for (const user of site.users) {
     const indexText = index.toString()
-    inner += '<li>' + indexText + '. ' + user.name + ' ' + user.surname + '</li>'
+    inner += `<li>${indexText}. ${user.name} ${user.surname}</li>`
     index++
 }
 
@@ -28,3 +28,29 @@ textWidget[0].innerHTML = site.weather.temperature.toString() + site.weather.uni
 const allNotes = getAllNotes(site)
 
 console.warn(allNotes)
+
+const notes = document.querySelectorAll<HTMLElement>('#notes')
+
+let except = ''
+
+for (const note of allNotes) {
+    except +=
+        `<div class="note" style="background: ${note.color}">
+            <div class="left">
+                <div class="containter">
+                    <div class="designation_note">
+                        <h1>${note.header}</h1>
+                    </div>
+                    <div class="text_note">
+                        <h2>${note.text}</h2>
+                    </div>
+                </div>
+                </div>
+            <div class="right">
+                <div class="user">${resolveUserById(note.userId, site).name}</div>
+                <div class="date_note">${note.createdTime.toDateString()}</div>
+            </div>
+        </div>`
+}
+
+notes[0].innerHTML = except

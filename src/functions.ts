@@ -16,3 +16,14 @@ export function getAllNotes(site: Site): Note[] {
     // allNotes = site.users.flatMap(user => user.notes.map(note => note))
     return allNotes
 }
+
+// Функция находит пользователя по заданному ID
+export function resolveUserById(userId: number, site: Site): User | null {
+    for (const user of site.users) {
+        if (user.id === userId) {
+            return user
+        }
+    }
+
+    return null
+}

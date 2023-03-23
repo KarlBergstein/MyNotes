@@ -12,21 +12,21 @@ export const note2: Note = {
     id: 1,
     header: 'Header2',
     text: 'Text2',
-    userId: 1,
+    userId: 0,
     createdTime: new Date('05.09.1985 15:33'),
-    color: 'blue'
+    color: 'green'
 }
 
 export const note3: Note = {
     id: 2,
     header: 'Header3',
     text: 'Text3',
-    userId: 2,
+    userId: 1,
     createdTime: new Date('05.09.1985 15:33'),
     color: 'red'
 }
 
-const user1: User = {
+export const user1: User = {
     id: 0,
     name: 'Thomas',
     surname: 'Edison',
@@ -38,7 +38,7 @@ const user1: User = {
     notes: [note1, note2]
 }
 
-const user2: User = {
+export const user2: User = {
     id: 1,
     name: 'Jack',
     surname: 'London',
@@ -50,7 +50,7 @@ const user2: User = {
     notes: [note3]
 }
 
-const user3: User = {
+export const user3: User = {
     id: 2,
     name: 'Max',
     surname: 'Christy',
